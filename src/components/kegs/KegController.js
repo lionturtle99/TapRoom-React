@@ -6,7 +6,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Keg from './Keg';
 import KegForm from './KegForm.js';
 
-
 class KegController extends React.Component {
   constructor(props) {
     super(props);
@@ -44,6 +43,7 @@ class KegController extends React.Component {
   }
 
   render(){
+
     this.state.mainKegList.forEach((keg) => {
       if (keg.pints <= 0) {
         this.handleDeletingKeg(keg.id);
@@ -70,7 +70,7 @@ class KegController extends React.Component {
           <Col md={4} className="py-3 px-4 fw-light">
           <Row className="text-center border rounded shadow-sm mb-3 p-3">
               <Col>
-                <h6>Total Pints sold</h6>
+                <h6>Total Pints Sold</h6>
                 <p className="fw-bold fs-6 text-decoration-underline">{this.state.totalPintsSold}</p>
               </Col>
             </Row>
