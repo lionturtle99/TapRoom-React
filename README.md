@@ -1,4 +1,94 @@
+<p align="center">
+    <br>
+    <a href="https://github.com/LunsfordSpace">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/87952201?s=400&u=5ac30267d7cfc6f11c4ecf57d21c6600941b451f&v=4">
+    </a>
+    <p align="center">
+    </p>
+    <p align="center">
+        <a href="https://github.com/lionturtle99">
+            <strong>LionTurtle99</strong>
+        </a>
+    </p>
+    <p align="center">
+        <a href="https://lionturtle99.github.io/my-portfolio/">
+          <img src="https://img.shields.io/badge/-Portfolio-B7178C?loggithub&logoWidth=30">
+        </a>
+        ¨
+        <a href="mailto:<liamthelastson@gmail.com>">
+            <img src="https://img.shields.io/badge/-Email%20Me-CA4245?loggithub&logoWidth=30">
+        </a>
+        ¨
+        <a href="https://linkedin.com/in/liameller">
+            <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=plastic&logo=linkedin&colorB=2867B2">
+        </a>
+    </p>    
+</p>
+
+<p align="center">
+  <small>Initiated April, 2022</small>
+</p>
+
+<h1 align="center">Brewery</h1>
+
+#### _A React one page application where a user may add kegs to be displayed in a list, sell pints and see the keg disappear when sold out_
+
 <img src="./src/img/wireframe.png">
+
+<p align="center"> Wireframe with detailed outline of project component tree </p>
+
+## Technologies Used
+
+* _JavaScript_
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Popper.js_
+* _npm_
+* _Webpack_
+* _Jest_
+* _ESLint_
+* _Babel_
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+## 🏁 Getting Started
+
+### 📋 Prerequisites
+
+#### Code Editor
+
+You'll need to open the project in your desired text editor. I recommend [visual studio code.](https://code.visualstudio.com/download).
+
+### ⚙️ Setup and Use
+
+  #### Cloning
+
+  1) Click 'Clone or download' to reveal the HTTPS url ending with .git and the 'Download ZIP' option.
+  2) Open up your system Terminal or GitBash, navigate to your desktop with the command: `cd Desktop`, or whichever location suits you best.
+  3) Clone the repository to your desktop: `$ git clone (project name)`
+  4) Run the command `cd brewery` to enter into the project directory.
+  5) View or Edit:
+      * Code Editor - Run the command `atom .` or `code .` to open the project in Atom or VisualStudio Code respectively for review and editing.
+      * Text Editor - Open by double clicking on any of the files to open in a text editor.
+
+  #### Download
+
+  1) Click 'Download ZIP' and extract.
+  2) Open by double clicking on any of the files to open in a text editor.
+
+
+## Deployment
+
+* _Run `npm install` to set up node modules file_
+* _Run `npm run start` to build and launch the application in your browser_
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+### ⚖️ License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2022 Liam Eller. All Rights Reserved.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 # Getting Started with Create React App
 
@@ -70,3 +160,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<center><a href="#">Return to Top</a></center>
