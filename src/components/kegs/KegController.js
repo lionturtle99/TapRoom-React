@@ -22,6 +22,15 @@ class KegController extends React.Component {
     });
   }
 
+  handleSellingPints = (id) => {
+    const selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0]
+    selectedKeg.pints -= 1;
+    this.setState({
+      mainKegList: newMainKegList,
+      selectedKeg: null
+    });
+  }
+
   render(){
     return (
       <Container className="pt-2">
@@ -35,11 +44,17 @@ class KegController extends React.Component {
                   imageURL={keg.imageURL}
                   id={keg.id}
                   key={keg.id}
+                  onClickingSellPint = {this.handleSellingPints}
                 />
               )}
             </ListGroup>
           </Col>
           <Col md={4} className="py-3 px-4 fw-light">
+          <Row className="text-center border rounded shadow-sm mb-3 pb-5 pt-3 px-3">
+              <Col>
+                <h6>Total Pints sold</h6>
+              </Col>
+            </Row>
             <Row className="text-center border rounded shadow-sm pb-5 pt-3 px-3">
               <Col>
                 <KegForm onNewKegCreation={this.handleAddingNewKegToList} />
