@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
-// import Keg from './Keg';
+import Keg from './Keg';
 // import KegForm from './KegForm.js';
 
 
@@ -29,7 +29,7 @@ class KegController extends React.Component {
         <Row className="border rounded shadow-sm">
           <Col md={8} className="p-3 fw-light">
             <ListGroup>
-              {/* {this.state.mainKegList.map((keg) => 
+              {this.state.mainKegList.map((keg) => 
                 <Keg flavor={keg.flavor}
                   description={keg.description}
                   pints={keg.pints}
@@ -37,7 +37,7 @@ class KegController extends React.Component {
                   id={keg.id}
                   key={keg.id}
                 />
-              )} */}
+              )}
             </ListGroup>
           </Col>
           <Col md={4} className="py-3 px-4 fw-light">
