@@ -10,7 +10,7 @@ function KegForm(props) {
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({name: event.target.name.value, description: event.target.description.value, pints: event.target.pints.value, imageURL: kegImg, id: v4()})
-    event.reset();
+    event.target.reset();
   }
 
   return (
