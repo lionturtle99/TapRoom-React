@@ -19,7 +19,6 @@ class KegController extends React.Component {
     const newMainKegList = this.state.mainKegList.concat(newKeg);
     this.setState({
       mainKegList: newMainKegList,
-      totalPintsSold: this.state.totalPintsSold
     });
   }
 
@@ -38,7 +37,6 @@ class KegController extends React.Component {
     const newMainKegList = this.state.mainKegList.filter(keg => keg.id !== id);
     this.setState({
       mainKegList: newMainKegList,
-      totalPintsSold: this.state.totalPintsSold
     });
   }
 
@@ -48,7 +46,7 @@ class KegController extends React.Component {
       if (keg.pints <= 0) {
         this.handleDeletingKeg(keg.id);
       }
-    })
+    });
 
     return (
       <Container className="pt-2">
