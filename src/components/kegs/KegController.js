@@ -1,11 +1,10 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Keg from './Keg';
-// import KegForm from './KegForm.js';
+import KegForm from './KegForm.js';
 
 
 class KegController extends React.Component {
@@ -30,7 +29,7 @@ class KegController extends React.Component {
           <Col md={8} className="p-3 fw-light">
             <ListGroup>
               {this.state.mainKegList.map((keg) => 
-                <Keg flavor={keg.flavor}
+                <Keg name={keg.name}
                   description={keg.description}
                   pints={keg.pints}
                   imageURL={keg.imageURL}
@@ -43,7 +42,7 @@ class KegController extends React.Component {
           <Col md={4} className="py-3 px-4 fw-light">
             <Row className="text-center border rounded shadow-sm pb-5 pt-3 px-3">
               <Col>
-                {/* <KegForm onNewKegCreation={this.handleAddingNewKegToList} /> */}
+                <KegForm onNewKegCreation={this.handleAddingNewKegToList} />
               </Col>
             </Row>
           </Col>
@@ -52,5 +51,7 @@ class KegController extends React.Component {
     )
   }
 }
+
+
 
 export default KegController;
