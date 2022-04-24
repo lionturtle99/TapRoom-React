@@ -19,7 +19,7 @@ function Keg(props) {
 
           <div className="mt-3 me-3 text-end">
             <Button onClick={ () => props.onClickingSellPint(props.id) } variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm">sell pint</Button>
-            <Button variant="dark" size="sm" className="px-4 rounded-pill shadow-sm">update</Button>
+            <Button onClick={ () => props.onEditKeg(props.id) } variant="dark" size="sm" className="px-4 rounded-pill shadow-sm">update</Button>
           </div>
         </Col>
       </Row>
@@ -33,7 +33,8 @@ Keg.propType = {
   description: PropTypes.string,
   id: PropTypes.string,
   pints: PropTypes.number,
-  onClickingSellPint: PropTypes.func
+  onClickingSellPint: PropTypes.func,
+  onEditKeg: PropTypes.func
 }
 
 export default Keg;

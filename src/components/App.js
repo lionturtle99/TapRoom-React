@@ -1,5 +1,5 @@
 import Header from './Header/Header.js';
-import KegController from './kegs/KegController'
+import KegController from './kegs/KegControl'
 
 function App() {
   return (
