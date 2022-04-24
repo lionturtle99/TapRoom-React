@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { v4 } from 'uuid';
 import kegImg from './../../img/happy-keg.png';
-import ReusableForm from './../Utilities/ReusableForm';
+import ReusableForm from '../Utilities/ReusableForm';
 
 function KegForm(props) {
   

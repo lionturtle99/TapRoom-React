@@ -9,7 +9,8 @@ class KegController extends React.Component {
     this.state = {
       mainKegList: [],
       totalPintsSold: 0,
-      editing: true
+      editing: false,
+      selectedKeg: null
     };
   }
 
@@ -39,7 +40,22 @@ class KegController extends React.Component {
   }
 
   onEditKeg = (id) => {
-    console.log("it made to the onEditKeg method " + id);
+    const selectedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
+    this.setState({
+      selectedKeg: selectedKeg,
+      editing: true
+    });
+  }
+
+  handleEditingKeg = (kegToEdit) => {
+    const editedMainKegList = this.state.mainKegList
+    .filter(keg => keg.id !== this.state.selectedKeg.id)
+    .concat(kegToEdit);
+  this.setState({
+      mainKegList: editedMainKegList,
+      editing: false,
+      selectedKeg: null
+    });
   }
 
   render(){
@@ -51,14 +67,19 @@ class KegController extends React.Component {
     });
 
     if (this.state.editing) {
-      visibleScreen = <EditKegForm formSubmissionHandler={this.onEditKeg} />
+      visibleScreen = <EditKegForm 
+        handleEditingKeg={this.handleEditingKeg}
+        name={this.state.selectedKeg.name}
+        description={this.state.selectedKeg.description}
+        pints={this.state.selectedKeg.pints} />
     } 
     else {
       visibleScreen = <KegList  
         mainKegList={this.state.mainKegList} 
         handleSellingPints={this.handleSellingPints} 
-        totalPintsSold={this.totalPintsSold} 
-        handleAddingNewKegToList={this.handleAddingNewKegToList} />
+        totalPintsSold={this.state.totalPintsSold} 
+        handleAddingNewKegToList={this.handleAddingNewKegToList}
+        onEditKeg={this.onEditKeg} />
     }
 
     return (
@@ -72,36 +93,3 @@ class KegController extends React.Component {
 
 
 export default KegController;
-
-
-// <Container className="pt-2">
-//         <Row className="border rounded shadow-sm">
-//           <Col md={8} className="p-3 fw-light">
-//             <ListGroup>
-//               {this.state.mainKegList.map((keg) => 
-//                 <Keg name={keg.name}
-//                   description={keg.description}
-//                   pints={keg.pints}
-//                   imageURL={keg.imageURL}
-//                   id={keg.id}
-//                   key={keg.id}
-//                   onClickingSellPint = {this.handleSellingPints}
-//                 />
-//               )}
-//             </ListGroup>
-//           </Col>
-//           <Col md={4} className="py-3 px-4 fw-light">
-//           <Row className="text-center border rounded shadow-sm mb-3 p-3">
-//               <Col>
-//                 <h6>Total Pints Sold</h6>
-//                 <p className="fw-bold fs-6 text-decoration-underline">{this.state.totalPintsSold}</p>
-//               </Col>
-//             </Row>
-//             <Row className="text-center border rounded shadow-sm pb-5 pt-3 px-3">
-//               <Col>
-//                 <KegForm onNewKegCreation={this.handleAddingNewKegToList} />
-//               </Col>
-//             </Row>
-//           </Col>
-//         </Row>
-//       </Container>

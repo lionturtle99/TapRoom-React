@@ -10,7 +10,7 @@ function ReusableForm(props) {
       <Form.Control
         type='text'
         name='name'
-        value={props.name}
+        defaultValue={props.name}
         placeholder="Name"
         className="mb-3 shadow-sm"
         required="required" />
@@ -18,7 +18,7 @@ function ReusableForm(props) {
         as='textarea'
         rows={4}
         name='description'
-        value={props.description}
+        defaultValue={props.description}
         placeholder="Description"
         className="mb-3 shadow-sm" 
         required="required"/>
@@ -27,7 +27,7 @@ function ReusableForm(props) {
         min='1'
         max='15000'
         name='pints'
-        value={props.pints}
+        defaultValue={props.pints}
         placeholder="pints"
         className="mb-3 shadow-sm" 
         required="required"/>
