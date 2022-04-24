@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Keg from './Keg';
-import KegForm from './KegForm.js';
+import KegForm from './NewKegForm.js';
 
 function KegList(props){
   return (
@@ -20,6 +20,7 @@ function KegList(props){
                 id={keg.id}
                 key={keg.id}
                 onClickingSellPint = {props.handleSellingPints}
+                onEditKeg={props.onEditKeg}
               />
             )}
           </ListGroup>
