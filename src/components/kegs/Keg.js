@@ -33,7 +33,8 @@ Keg.propType = {
   description: PropTypes.string,
   id: PropTypes.string,
   pints: PropTypes.number,
-  onClickingSellPint: PropTypes.func
+  onClickingSellPint: PropTypes.func,
+  onEditKeg: PropTypes.func
 }
 
 export default Keg;

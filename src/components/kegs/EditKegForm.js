@@ -25,7 +25,11 @@ function EditKegForm(props) {
 }
 
 EditKegForm.propType = {
-  onEditKeg: PropTypes.func
+  handleEditingKeg: PropTypes.func,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  pints: PropTypes.number
+
 }
 
 export default EditKegForm;

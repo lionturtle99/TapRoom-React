@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Keg from './Keg';
 import KegForm from './NewKegForm.js';
+import PropTypes from "prop-types";
 
 function KegList(props){
   return (
@@ -41,6 +42,13 @@ function KegList(props){
       </Row>
     </Container>
   )
+}
+
+KegList.propType = {
+  handleSellingPints: PropTypes.func,
+  onEditKeg: PropTypes.func,
+  totalPintsSold: PropTypes.number,
+  handleAddingNewKegToList: PropTypes.func,
 }
 
 export default KegList;
