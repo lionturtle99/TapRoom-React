@@ -29,7 +29,7 @@
   <small>Initiated April, 2022</small>
 </p>
 
-<h1 align="center">Brewery</h1>
+<h1 align="center">Tap Room</h1>
 
 #### _A React one page application where a user may add kegs to be displayed in a list, sell pints and see the keg disappear when sold out_
 
