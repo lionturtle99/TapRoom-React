@@ -11,7 +11,7 @@
         </a>
     </p>
     <p align="center">
-        <a href="https://lionturtle99.github.io/my-portfolio/">
+        <a href="https://lionturtle99.github.io/Portfolio/">
           <img src="https://img.shields.io/badge/-Portfolio-B7178C?loggithub&logoWidth=30">
         </a>
         ¨
@@ -159,4 +159,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-<center><a href="#">Return to Top</a></center>
+<p><a href="#">Return to Top</a></p>
