@@ -38,17 +38,15 @@
 <p align="center"> Wireframe with detailed outline of project component tree </p>
 
 ## Technologies Used
-
-* _JavaScript_
+* _Visual Studio Code_
+* _Chrome_
 * _HTML_
 * _CSS_
-* _Bootstrap_
-* _Popper.js_
-* _npm_
-* _Webpack_
+* _Bootstrap 5_
+* _JavaScript_
 * _Jest_
-* _ESLint_
-* _Babel_
+* _NPM_
+* _Webpack_
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
